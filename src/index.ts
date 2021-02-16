@@ -84,7 +84,6 @@ export function init({
       push(['setCustomUrl', pathname])
       push(['setDocumentTitle', document.title])
       push(['deleteCustomVariables', 'page'])
-      push(['setGenerationTimeMs', 0])
       if (/^\/suche/.test(pathname) || /^\/recherche/.test(pathname) || /^\/search/.test(pathname)) {
         push(['trackSiteSearch', q])
       } else {
